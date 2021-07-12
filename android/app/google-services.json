@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "974998212719",
+    "project_id": "medi-grantha-app",
+    "storage_bucket": "medi-grantha-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974998212719:android:fecd50c027f5d3c1a57d9a",
+        "android_client_info": {
+          "package_name": "com.example.medi_granta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974998212719-npj5hbr1k7n00m6rsar86mqech9vrm7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz9O3hJZ57k4uTjgJBte45I8oAsUaEbtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974998212719-npj5hbr1k7n00m6rsar86mqech9vrm7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

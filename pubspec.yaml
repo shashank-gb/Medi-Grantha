@@ -1,0 +1,35 @@
+name: medi_granta
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker:
+  image_cropper:
+  cupertino_icons: ^1.0.2
+  carousel_slider:
+  sizer:
+  flutter_tags:
+  google_fonts:
+  device_preview:
+  google_ml_kit:
+  firebase_core:
+  cloud_firestore:
+  http:
+  flutter_html:
+  shake:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/

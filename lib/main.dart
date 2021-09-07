@@ -4,7 +4,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medi_granta/screens/main_screen.dart';
 import 'package:medi_granta/screens/process_screen.dart';
-import 'screens/home_screen.dart';
+import 'waste/home_screen.dart';
 
 void main() {
   // runApp(DevicePreview(builder: (context) => MyApp()));

@@ -12,6 +12,7 @@ class GetAndCropImage {
     if (pickedFile != null) {
       return cropImage(pickedFile.path, _image);
     }
+    return 'Empty';
   }
 
   Future<String> cropImage(String imgPath, File _image) async {

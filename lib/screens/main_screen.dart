@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:medi_granta/Widgets/details_screen_widgets.dart';
 import 'package:medi_granta/Widgets/home_screen_widgets.dart';
-import 'package:medi_granta/colors.dart';
-import 'package:medi_granta/get_and_crop_image.dart';
+import 'package:medi_granta/models/colors.dart';
+import 'package:medi_granta/models/get_and_crop_image.dart';
 import 'package:medi_granta/screens/process_screen.dart';
 
 class MainScreen extends StatefulWidget {

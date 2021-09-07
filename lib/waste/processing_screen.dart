@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tags/flutter_tags.dart';
 import 'package:medi_granta/Widgets/details_screen_widgets.dart';
-import 'package:medi_granta/colors.dart';
+import 'package:medi_granta/models/colors.dart';
 import 'package:sizer/sizer.dart';
-import 'details_screen.dart';
+import '../screens/details_screen.dart';
 
 class ProcessingScreen extends StatefulWidget {
   static const String id = 'processing_screen';

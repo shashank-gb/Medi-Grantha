@@ -23,6 +23,7 @@ dependencies:
   http:
   flutter_html:
   shake:
+  flutter_tts_improved:
 dev_dependencies:
   flutter_test:
     sdk: flutter

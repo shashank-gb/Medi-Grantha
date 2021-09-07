@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medi_granta/models/colors.dart';
 import 'details_screen_widgets.dart';
 
 class DrugsWidget extends StatelessWidget {
@@ -65,115 +66,119 @@ class DrugsWidget extends StatelessWidget {
         Expanded(
           child: Scrollbar(
             radius: Radius.circular(10),
-            child: ListView(
-              shrinkWrap: true,
-              children: [
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: GeneralDetailsList(
-                    manufacturer: manufacturer,
-                    saltComposition: saltComposition,
-                    storage: storage,
-                    height: height,
+            child: GlowingOverscrollIndicator(
+              axisDirection: AxisDirection.down,
+              color: primaryColor,
+              child: ListView(
+                shrinkWrap: true,
+                children: [
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: GeneralDetailsList(
+                      manufacturer: manufacturer,
+                      saltComposition: saltComposition,
+                      storage: storage,
+                      height: height,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: height * 0.01,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20.0,
+                  SizedBox(
+                    height: height * 0.01,
                   ),
-                  child: Column(
-                    children: [
-                      HeadAndTextCard(
-                        height: height,
-                        content: introduction,
-                        heading: 'INTRODUCTION',
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
-                      ),
-                      BenefitsWidget(
-                        name: name,
-                        height: height,
-                        header: benefitsHeader,
-                        textHeader: benefitsTextHeader,
-                        text: benefitsText,
-                        width: width,
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
-                      ),
-                      SideEffectsWidget(
-                        height: height,
-                        // text: sideEffectsText,
-                        header: sideEffectsHeader,
-                        values: sideEffectsValues,
-                        width: width,
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
-                      ),
-                      HeadAndTextCard(
-                        height: height,
-                        content: howToUse,
-                        heading: howToUseHeader.toUpperCase(),
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
-                      ),
-                      HeadAndTextCard(
-                        height: height,
-                        content: howItWorks,
-                        heading: howItWorksHeader.toUpperCase(),
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
-                      ),
-                      Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20.0,
+                    ),
+                    child: Column(
+                      children: [
+                        HeadAndTextCard(
+                          height: height,
+                          content: introduction,
+                          heading: 'INTRODUCTION',
                         ),
-                        elevation: 5,
-                        child: Container(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 10,
-                            horizontal: 14,
+                        SizedBox(
+                          height: height * 0.01,
+                        ),
+                        BenefitsWidget(
+                          name: name,
+                          height: height,
+                          header: benefitsHeader,
+                          textHeader: benefitsTextHeader,
+                          text: benefitsText,
+                          width: width,
+                        ),
+                        SizedBox(
+                          height: height * 0.01,
+                        ),
+                        SideEffectsWidget(
+                          height: height,
+                          // text: sideEffectsText,
+                          header: sideEffectsHeader,
+                          values: sideEffectsValues,
+                          width: width,
+                        ),
+                        SizedBox(
+                          height: height * 0.01,
+                        ),
+                        HeadAndTextCard(
+                          height: height,
+                          content: howToUse,
+                          heading: howToUseHeader.toUpperCase(),
+                        ),
+                        SizedBox(
+                          height: height * 0.01,
+                        ),
+                        HeadAndTextCard(
+                          height: height,
+                          content: howItWorks,
+                          heading: howItWorksHeader.toUpperCase(),
+                        ),
+                        SizedBox(
+                          height: height * 0.01,
+                        ),
+                        Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
                           ),
-                          child: Column(
-                            children: [
-                              Heading20Bold(
-                                heading: 'SAFETY ADVICES',
-                              ),
-                              SizedBox(
-                                height: height * 0.01,
-                              ),
-                              SafetyAdviceListWidget(
-                                text: safetyAdviceText,
-                                height: height,
-                                label: safetyAdviceLabel,
-                                description: safetyAdviceDesc,
-                              ),
-                            ],
+                          elevation: 5,
+                          child: Container(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                              horizontal: 14,
+                            ),
+                            child: Column(
+                              children: [
+                                Heading20Bold(
+                                  heading: 'SAFETY ADVICES',
+                                ),
+                                SizedBox(
+                                  height: height * 0.01,
+                                ),
+                                SafetyAdviceListWidget(
+                                  text: safetyAdviceText,
+                                  height: height,
+                                  label: safetyAdviceLabel,
+                                  description: safetyAdviceDesc,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
-                      ),
-                      HeadAndTextCard(
-                        height: height,
-                        content: forgetToTake,
-                        heading: forgetToTakeHeader.toUpperCase(),
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
-                      ),
-                    ],
+                        SizedBox(
+                          height: height * 0.01,
+                        ),
+                        HeadAndTextCard(
+                          height: height,
+                          content: forgetToTake,
+                          heading: forgetToTakeHeader.toUpperCase(),
+                        ),
+                        SizedBox(
+                          height: height * 0.01,
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),

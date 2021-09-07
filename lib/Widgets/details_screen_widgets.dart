@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import '../colors.dart';
+import '../models/colors.dart';
 import 'home_screen_widgets.dart';
 
 class TopBar extends StatelessWidget {
@@ -98,12 +98,12 @@ class TopBar extends StatelessWidget {
       return Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          Image.network(
-            'https://dummyimage.com/80x100/ffffff/000000.png&text=sample',
-          ),
-          SizedBox(
-            width: width * 0.05,
-          ),
+          // Image.network(
+          //   'https://dummyimage.com/80x100/ffffff/000000.png&text=sample',
+          // ),
+          // SizedBox(
+          //   width: width * 0.05,
+          // ),
           Expanded(
             child: Text(
               medicine,
@@ -143,7 +143,7 @@ class TopBar extends StatelessWidget {
           ),
           SizedBox(
             width: width,
-            height: height / 15,
+            height: height / 20,
           ),
           Carousel(),
           SizedBox(height: height / 15),

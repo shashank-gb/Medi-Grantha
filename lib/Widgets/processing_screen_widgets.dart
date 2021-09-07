@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medi_granta/screens/details_screen.dart';
 
-import '../colors.dart';
+import '../models/colors.dart';
 
 SnackBar buildSnackBar() {
   return SnackBar(

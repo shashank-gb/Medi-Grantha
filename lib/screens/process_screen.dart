@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tags/flutter_tags.dart';
 import 'package:medi_granta/Widgets/details_screen_widgets.dart';
 import 'package:medi_granta/Widgets/processing_screen_widgets.dart';
-import 'package:medi_granta/get_and_crop_image.dart';
+import 'package:medi_granta/models/get_and_crop_image.dart';
 import 'package:medi_granta/screens/details_screen.dart';
-import '../colors.dart';
+import '../models/colors.dart';
 
 class ProcessScreen extends StatefulWidget {
   static final String id = 'process_screen';
@@ -29,7 +29,7 @@ class _ProcessScreenState extends State<ProcessScreen> {
       onTap: () => _focusNode.unfocus(),
       child: SafeArea(
         child: Scaffold(
-          resizeToAvoidBottomInset: true,
+          resizeToAvoidBottomInset: false,
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [

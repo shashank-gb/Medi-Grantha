@@ -1,9 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:medi_granta/colors.dart';
+import 'package:medi_granta/models/colors.dart';
 import 'package:medi_granta/screens/details_screen.dart';
-import 'package:medi_granta/screens/processing_screen.dart';
+import 'package:medi_granta/waste/processing_screen.dart';
 
 final List imgList = ['images/carousel.png'];
 
